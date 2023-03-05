@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+
+            <!-- left_container -->
+            <div class="left">
+                <div class="profile">
+                    <img src="images/boookd (2).jpg" alt="">
+                    <div><h2>My Profile</h2>
+                    <h3>Books Store</h3></div>
+                </div>
+                <div class="search_result">
+                     <h1>Trending Subjects</h1>
+                     <div class="TS_search" ><input id="input2" type="search" placeholder="Trending Subjects">
+                     <div class="TS_Search_bt" onclick="Subject_Button()"><span><ion-icon name="search-outline"></ion-icon></span></div>   
+                     </div> 
+                     <div class="result">
+                     <div class="search_result_h3"><h3 class="bt_content">Harry Potter</h3></div> 
+                     <div class="search_result_h3"><h3 class="bt_content">Javascript</h3></div> 
+                     <div class="search_result_h3"><h3 class="bt_content">Rich Dad Poor Dad</h3></div> 
+                     <div class="search_result_h3"><h3 class="bt_content">The Meg</h3></div> 
+                     <div class="search_result_h3"><h3 class="bt_content">Indian History</h3></div> 
+                     <div class="search_result_h3"><h3 class="bt_content">Queen Of Fire</h3></div>
+                     <div class="search_result_h3"><h3 class="bt_content">Pinocchio</h3></div>
+                     <div class="search_result_h3"><h3 class="bt_content">Crypto Currency</h3></div>
+                     <div class="search_result_h3"><h3 class="bt_content">Criminal Law</h3></div>
+                     <div class="search_result_h3"><h3 class="bt_content">Atomic Habites</h3></div>
+                    </div> 
+                </div>
+                <div class="FL_buttons">
+                    <button class="Up" onclick="Up()"><span>Scroll Up</span><ion-icon class="ion" name="arrow-up-circle-outline"></ion-icon></button>
+                    <button class="Down" onclick="Down()"><span>Scroll Down</span><ion-icon class="ion" name="arrow-down-circle-outline"></ion-icon></button>
+                </div>
+            </div>
+
+            <!-- right_container -->
+            <div class="right">
+                <div class="box1">
+                    <input  id="input" class="Search_in" type="search" placeholder="Search Books">
+                    <button class="Search_bt" onclick="Search_Button()">search</button>
+                </div>
+                <div class="preloder" id="preloder_id">
+                    <div class="loder">
+                    <div class="line" id="line_id1"></div>
+                    <div class="line" id="line_id2"></div>
+                    <div class="line" id="line_id3"></div>
+                    <div class="line" id="line_id4"></div>
+                    <div class="line" id="line_id5"></div>
+                    </div>
+                </div>
+                <div class="box2" id="box2_id" >
+                    <div id="Scroll">
+                    <div>
+                       <h1 id="search_key" class="search_key1"></h1>
+                    </div>
+                    <div id="output" class="Books_output">   
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- circles -->
+        <div class="circle circle1"></div>
+        <div class="circle circle2"></div>
+        <div class="Small_circle circle_Animation circle_Transition" id="c1"></div>
+        <div class="Small_circle1 circle_Animation circle_Transition"id="c2"></div>
+        <div class="Small_circle2 circle_Animation circle_Transition" id="c3"></div>
+        <div class="Small_circle3 circle_Animation circle_Transition"id="c2"></div>
+
+    </main>
+<script src="index.js"></script>    
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
